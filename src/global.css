@@ -1,0 +1,458 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+li {
+  list-style: none;
+}
+.websiteName {
+  color: aqua;
+}
+/* 
+==================================================================================
+-------------------------------Below is styling for NavBar-------------------
+=================================================================================
+*/
+/* styling for navBar component */
+/* main div */
+.navbar {
+  background-color: black;
+  width: 100%;
+  height: 15vh;
+  display: flex;
+}
+/* logo div */
+.logo {
+  width: 25%;
+  width: 2px solid black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Times New Roman", Times, serif;
+}
+/* navbar links div */
+.navbarLinks {
+  width: 75%;
+}
+/*  */
+.navbarLinks ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  font-size: x-large;
+  color: white;
+}
+/* media query for ipad mini */
+@media screen and (max-width: 768px) {
+  .navbarLinks {
+    width: 100%;
+  }
+  .navbarLinks ul {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  a {
+    font-size: xx-larger;
+  }
+  .navbar {
+    display: block;
+  }
+  .logo {
+    width: 100%;
+
+    margin-bottom: 20px;
+  }
+}
+/* media query for i phone se */
+@media screen and (max-width: 767px) {
+  .logo {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+  a {
+    font-size: medium;
+  }
+  .navbarLinks ul {
+    /* to make links to be in center on smaller screen */
+    margin-right: 40px;
+  }
+}
+/*
+============================================================================================
+--------------------------------------- styling for Home component------------------------
+==============================================================================================
+*/
+
+.parent {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-around;
+  color: white;
+}
+.h1 {
+  font-size: 50px;
+  font-family: "Times New Roman", Times, serif;
+}
+.aboutMeDiv,
+.registrationFormDiv {
+  height: 400px;
+  width: 350px;
+  /* background-color: rgba(0, 0, 0, 0.1); */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 30px;
+}
+
+.loginForm {
+  border: 2px solid rgb(111, 117, 111);
+  height: 310px;
+  width: 270px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.1);
+  box-shadow: 0, 0, 10px, rgba(0, 0, 0, 1);
+  color: #fff;
+  padding-top: 60px;
+}
+.login h1 {
+  letter-spacing: 1px;
+}
+input {
+  width: 200px;
+  margin-top: 20px;
+  color: #fff;
+  background: transparent;
+  /* outline: none; */
+  padding: 10px;
+  font-size: 13px;
+  border-radius: 30px;
+  box-shadow: 0 0 4px white;
+  transition: box-shadow 0.5s ease;
+  font-family: "Times New Roman", Times, serif;
+}
+
+button {
+  padding: 5px 20px;
+  margin-top: 30px;
+  background: transparent;
+  border-radius: 30px;
+  box-shadow: 0 0 4px white;
+  color: #fff;
+}
+::placeholder {
+  color: white;
+  font-size: x-large;
+  text-align: center;
+}
+input:focus,
+button:hover {
+  box-shadow: 0 0 10px white;
+  background-color: white;
+  color: black;
+}
+
+/* Ipad media query */
+@media screen and (min-device-width: 768px) and (max-device-width: 912px) {
+  .parent {
+    display: flex;
+    flex-direction: column;
+    height: 85vh;
+  }
+  .aboutMeDiv,
+  .registrationFormDiv {
+    height: 390px;
+    width: 450px;
+    margin-top: 10px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .aboutMeDiv,
+  .registrationFormDiv {
+    height: 470px;
+    width: 450px;
+  }
+  .parent {
+    height: 85vh;
+  }
+}
+/* 
+=============================================================================================================
+----------------------------------below is styling for live data component----------------------------------
+============================================================================================================
+*/
+.liveDataParentDiv {
+  height: 40vh;
+  width: 100%;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  /* padding-bottom: 0px; */
+}
+.gainersLosersHeading {
+  margin-top: 2px;
+  text-align: center;
+  border-bottom: 2px solid white;
+}
+.gainersText {
+  color: green;
+}
+.losersText {
+  color: red;
+}
+.greenBackground {
+  margin-top: 40px;
+  background-color: rgb(58, 149, 58);
+}
+.redbackground {
+  margin-top: 40px;
+  background-color: rgb(217, 58, 58);
+}
+.newsDiv {
+  background: linear-gradient(to right, rgb(43, 171, 62), rgb(185, 61, 61));
+  height: 31vh;
+}
+.newsheading,
+h4 {
+  text-align: center;
+  margin: 2px;
+  padding: 2px;
+  border-bottom: 2px solid white;
+}
+/* media query for live data tables */
+
+@media screen and (max-width: 1023px) {
+  .liveDataParentDiv {
+    height: 25vh;
+    /* padding-top: 50px; */
+  }
+  .gainersLosersHeading {
+    font-size: 55px;
+  }
+  .greenBackground,
+  .redbackground {
+    margin-top: 40px;
+  }
+
+  .newsDiv {
+    height: 100%;
+  }
+  .newsheading {
+    font-size: 55px;
+  }
+  h4 {
+    margin: 20px;
+    padding: 20px;
+    font-size: 40px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .newsDiv {
+    height: 29vh;
+  }
+}
+@media screen and (max-width: 767px) {
+  .liveDataParentDiv {
+    height: 60vh;
+    padding-top: 25px;
+  }
+  .gainersLosersHeading,
+  .newsheading {
+    font-size: 28px;
+  }
+
+  .greenBackground {
+    margin-top: 0px;
+  }
+  .redbackground {
+    margin-top: 0px;
+  }
+  .newsDiv {
+    height: 45vh;
+  }
+  h4 {
+    margin: 5px;
+    padding: 5px;
+    font-size: 18px;
+  }
+}
+/* 
+==========================================================================================
+------------------------------------Styling contact us
+============================================================================================
+*/
+.contactParent {
+  height: 85vh;
+  width: 100%;
+
+  display: flex;
+}
+.contactSection {
+  height: 100%;
+  width: 100%;
+
+  text-align: center;
+}
+
+.myInfoDiv {
+  margin-top: 10px;
+}
+.textarea {
+  width: 350px;
+  height: 120px;
+  margin-top: 20px;
+  border-radius: 15px;
+}
+/* media query of contact page for iphone */
+@media screen and (max-width: 767px) {
+  .textarea {
+    width: 350px;
+    height: 80px;
+  }
+}
+@media screen and (min-device-width: 768px) and (max-device-width: 912px) {
+  .textarea {
+    width: 450px;
+    height: 180px;
+    font-size: 20px;
+  }
+  .myInfoDiv h1 {
+    font-size: 70px;
+  }
+  .myInfoDiv p {
+    font-size: 28px;
+  }
+  .myInfoDiv h3 {
+    font-size: 40px;
+  }
+  .myInfoDiv Button {
+    height: 80px;
+    width: 180px;
+    font-size: 40px;
+  }
+}
+/* 
+===================================================================================================
+-----------------------------------Services component styling------------------------
+=========================================================================================================
+
+*/
+.serviceParent {
+  height: 85vh;
+  /* background-color: black; */
+  width: 100%;
+}
+.servicesHeadingDiv {
+  text-align: center;
+  color: #fff;
+  height: 15vh;
+  padding-top: 10px;
+}
+
+.serviceContainers {
+  width: 100%;
+  height: 70vh;
+
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.container1,
+.container2,
+.container3 {
+  height: 60vh;
+  width: 260px;
+  margin-top: 30px;
+}
+.containerImage {
+  height: 40%;
+  width: 100%;
+}
+.containerInfo {
+  height: 60%;
+  width: 100%;
+  text-align: center;
+  padding-top: 5px;
+}
+.containerInfo p {
+  font-size: 20px;
+  word-spacing: 2px;
+  margin-top: 5px;
+  font-family: "Times New Roman", Times, serif;
+}
+.ppImage {
+  height: 400px;
+  width: 100%;
+}
+.ppImageb {
+  height: 100%;
+  width: 100%;
+}
+@media screen and (min-device-width: 768px) and (max-device-width: 912px) {
+  .serviceContainers {
+    display: flex;
+  }
+  .container1,
+  .container2,
+  .container3 {
+    height: 60vh;
+    width: 460px;
+    margin-top: 30px;
+  }
+  .containerInfo p {
+    font-size: 40px;
+    word-spacing: 2px;
+  }
+  .containerInfo h4 {
+    font-size: 50px;
+  }
+  .servicesHeadingDiv p {
+    font-size: 25px;
+  }
+  .servicesHeadingDiv h1 {
+    font-size: 50px;
+  }
+
+  .serviceParent {
+    height: 210vh;
+  }
+}
+@media screen and (max-width: 767px) {
+  .serviceContainers {
+    display: flex;
+    height: 200vh;
+  }
+  .ppImage {
+    height: 200px;
+    width: 100%;
+  }
+  .servicesHeadingDiv p {
+    font-size: 14px;
+  }
+  .serviceParent {
+    height: 220vh;
+  }
+}
+@media screen and (min-width: 1023px) {
+  .ppImage {
+    height: 200px;
+    width: 100%;
+  }
+}
