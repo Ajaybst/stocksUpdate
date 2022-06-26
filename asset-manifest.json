@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/stocksUpdate/static/css/main.e90181ac.css",
+    "main.js": "/stocksUpdate/static/js/main.87d623ec.js",
+    "static/media/clock.png": "/stocksUpdate/static/media/clock.11597864f2af10e8e1a1.png",
+    "static/media/dice.png": "/stocksUpdate/static/media/dice.8bec23f21a7237686b47.png",
+    "static/media/pp.png": "/stocksUpdate/static/media/pp.cd2b4e16ccaf128f0961.png",
+    "index.html": "/stocksUpdate/index.html",
+    "main.e90181ac.css.map": "/stocksUpdate/static/css/main.e90181ac.css.map",
+    "main.87d623ec.js.map": "/stocksUpdate/static/js/main.87d623ec.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e90181ac.css",
+    "static/js/main.87d623ec.js"
+  ]
+}
